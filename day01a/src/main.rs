@@ -19,6 +19,9 @@ pub fn elf_iterator(input: &str) -> Elf {
             }
         }
     }
+    if elf_cal > winner.1 {
+        winner = (elf_index, elf_cal);
+    }
 
     winner
 }
